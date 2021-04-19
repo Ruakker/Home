@@ -64,7 +64,7 @@ $(document).ready(function () {
 				imgUrls.push(item.url);
 			}
 			var imgUrl = imgUrls[index];
-			var url = "https://api.iro.tw/webp_pc.php";
+			var url = "https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302";
 			$panel.css("background", "url('"+url+"') center center no-repeat #666");
 			$panel.css("background-size", "cover");
 			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
@@ -76,7 +76,7 @@ $(document).ready(function () {
 		else
 			index++;
 		var imgUrl = imgUrls[index];
-		var url = "https://api.iro.tw/webp_pc.php";
+		var url = "https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302";
 		$panel.css("background", "url('"+url+"') center center no-repeat #666");
 		$panel.css("background-size", "cover");
 		sessionStorage.setItem("index",index);
