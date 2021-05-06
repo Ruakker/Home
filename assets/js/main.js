@@ -45,7 +45,7 @@ $(document).ready(function () {
 	// '&format=json&callback=?';
 
 	var $panel = $('#panel');
-	var url = "http://api.ixiaowai.cn/api/api.php";
+	var url = "https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302";
 	$panel.css("background", "url('"+url+"') center center no-repeat #666");
 	$panel.css("background-size", "cover");
 	$(".iUp").each(function (i, e) {
