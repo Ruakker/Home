@@ -4,6 +4,9 @@
 # Windows
 Thumbs.db
 
+# VSCode
+.history
+
 # phpMyAdmin
 irb-x/
 irb-x@
