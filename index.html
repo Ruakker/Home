@@ -1,354 +1,247 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Meta, title, CSS, favicons, etc. -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="A Home" />
-        <meta name="keywords" content="Ruakker,Homepage" />
-        <meta name="author" content="Ruakker" />
-        <meta http-equiv="Content-Language" content="zh-cn" />
-        <title>Ruakker's Home</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/css/onlinewebfonts.css"
-        />
-        <link rel="stylesheet" type="text/css" href="./assets/css/vno.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/css/iconfont.css"
-        />
-        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-        <link rel="icon" href="./favicon.ico" />
-        <script>
-            var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src =
-                    "https://hm.baidu.com/hm.js?ca0f3303f6b09024a67213a0af89117f";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-VWH491L0V9"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A Home" />
+    <meta name="keywords" content="Ruakker,Homepage" />
+    <meta name="author" content="Ruakker" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <title>Ruakker's Home</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/vno.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- 狡猾的标题栏 -->
+    <script>
+        var OriginTitile = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                document.title = "ヾ(^▽^*) - " + OriginTitile;
+                clearTimeout(titleTime);
+            } else {
+                document.title = "(*/ω＼*) - " + OriginTitile;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitile;
+                }, 1000);
             }
-            gtag("js", new Date());
+        });
+    </script>
+    <!-- Cursor -->
+    <link href="https://cdn.jsdelivr.net/gh/Ruakker/assets@1.0.0/css/cursor.min.css" rel="stylesheet" />
+</head>
 
-            gtag("config", "G-VWH491L0V9");
-        </script>
-        <!-- 狡猾的标题栏 -->
-        <script>
-            var OriginTitile = document.title;
-            var titleTime;
-            document.addEventListener("visibilitychange", function () {
-                if (document.hidden) {
-                    document.title = "ヾ(^▽^*) - " + OriginTitile;
-                    clearTimeout(titleTime);
-                } else {
-                    document.title = "(*/ω＼*) - " + OriginTitile;
-                    titleTime = setTimeout(function () {
-                        document.title = OriginTitile;
-                    }, 1000);
-                }
-            });
-        </script>
-        <!-- Cursor -->
-        <link
-            href="https://cdn.jsdelivr.net/gh/Ruakker/assets@1.0.0/css/cursor.min.css"
-            rel="stylesheet"
-        />
-    </head>
-
-    <body>
-        <span class="mobile btn-mobile-menu">
-            <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
-            <i
-                class="
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="
                     social
                     iconfont
                     icon-angleup
                     btn-mobile-close__icon
                     hidden
-                "
-            ></i>
-        </span>
-        <header id="panel" class="panel-cover">
-            <div class="panel-main">
-                <div class="panel-main__inner panel-inverted">
-                    <div class="panel-main__content">
-                        <div class="ih-item circle effect right_to_left">
-                            <a
-                                href="https://space.bilibili.com/186517328"
-                                title=""
-                                class="blog-button"
-                            >
-                                <div class="img">
+                "></i>
+    </span>
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">
+                        <a href="#" title="" class="blog-button">
+                            <div class="img">
+                                <img src="./img/Avatar.jpg"
+                                    alt="img" class="js-avatar iUp profilepic" />
+                            </div>
+                            <div class="info iUp">
+                                <div class="info-back">
                                     <img
-                                        src="https://img-kysic-1258722770.file.myqcloud.com/e656e6fa1b85a8c8a45ac2f41a64f35a/6667bb5d5aa52.jpg"
-                                        alt="img"
-                                        class="js-avatar iUp profilepic"
-                                    />
+                                        src="https://cdn.jsdelivr.net/gh/Ruakker/emoji@1.0.0/qq/%E5%BF%AB%E5%93%AD%E4%BA%86.gif" />
                                 </div>
-                                <div class="info iUp">
-                                    <div class="info-back">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/Ruakker/emoji@1.0.0/qq/%E5%BF%AB%E5%93%AD%E4%BA%86.gif"
-                                        />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        <h1 class="panel-cover__title panel-title iUp">
-                            <a href="#" title="Ruakker's Home">Ruakker</a>
-                        </h1>
-                        <p class="panel-cover__subtitle panel-subtitle iUp">
-                            OIer
-                        </p>
-                        <hr class="panel-cover__divider iUp" />
-                        <p
-                            id="description"
-                            class="panel-cover__description iUp"
-                        >
-                            如何得与凉风约，不共尘沙一并来!
-                            <br />
-                            <strong>-「中牟道中」</strong>
-                        </p>
-                        <div class="navigation-wrapper iUp">
-                            <div>
-                                <nav
-                                    class="
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <a href="#" title="Ruakker's Home">Ruakker</a>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">
+                        OIer
+                    </p>
+                    <hr class="panel-cover__divider iUp" />
+                    <p id="description" class="panel-cover__description iUp">
+                    </p>
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="
                                         cover-navigation
                                         cover-navigation--primary
-                                    "
-                                >
-                                    <ul class="navigation">
-                                        <li class="navigation__item">
-                                            <a
-                                                href="https://space.bilibili.com/186517328"
-                                                class="blog-button"
-                                                target="_blank"
-                                                >Bilibili</a
-                                            >
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a
-                                                href="https://twitter.com/The_Cold_Summer"
-                                                class="blog-button"
-                                                target="_blank"
-                                                >Twitter</a
-                                            >
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a
-                                                href="https://blog.ruakker.cn"
-                                                class="blog-button"
-                                                target="_blank"
-                                                >Blog</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="iUp">
-                                <nav
-                                    class="cover-navigation navigation--social"
-                                >
-                                    <ul class="navigation">
-                                        <li class="navigation__item">
-                                            <a
-                                                href="https://github.com/Ruakker/"
-                                                title="github"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="
+                                    ">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://blog.ruakker.cn" class="blog-button" target="_blank">Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="iUp">
+                            <nav class="cover-navigation navigation--social">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://github.com/Ruakker/" title="github" target="_blank">
+                                            <i class="
                                                         social
                                                         iconfont
                                                         icon-github
-                                                    "
-                                                ></i>
-                                                <span class="label"
-                                                    >github</span
-                                                >
-                                            </a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a
-                                                href="https://www.zhihu.com/people/junkrat-44"
-                                                title="zhihu"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="
-                                                        social
-                                                        iconfont
-                                                        icon-zhihu
-                                                    "
-                                                ></i>
-                                                <span class="label">zhihu</span>
-                                            </a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a
-                                                href="mailto:i@ruakker.cn"
-                                                title="email"
-                                            >
-                                                <i
-                                                    class="
+                                                    "></i>
+                                            <span class="label">github</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="mailto:i@ruakker.cn" title="email">
+                                            <i class="
                                                         social
                                                         iconfont
                                                         icon-email
-                                                    "
-                                                ></i>
-                                                <span class="label">email</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                                                    "></i>
+                                            <span class="label">email</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
-                <div class="panel-cover--overlay cover-slate"></div>
             </div>
-            <div class="remark iUp">
-                <p class="power">
-                    Powered By
-                    <a href="https://hitokoto.cn/" target="_blank">
-                        Hitokoto
-                    </a>
-                </p>
-            </div>
-        </header>
-        <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="./assets/js/fetch.min.js"></script>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
-
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-        </script>
-        <!-- snow -->
-        <div id="snow">
-            <canvas
-                class="particles-js-canvas-el"
-                width="142"
-                height="749"
-                style="width: 100%; height: 100%"
-            ></canvas>
+            <div class="panel-cover--overlay cover-slate"></div>
         </div>
+        <div class="remark iUp">
+            <p class="power">
+                Powered By
+                <a href="https://hitokoto.cn/" target="_blank">
+                    Hitokoto
+                </a>
+            </p>
+        </div>
+    </header>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fetch.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+    </script>
+    <!-- snow -->
+    <div id="snow">
+        <canvas class="particles-js-canvas-el" width="142" height="749" style="width: 100%; height: 100%"></canvas>
+    </div>
 
-        <script>
-            particlesJS("snow", {
-                particles: {
-                    number: {
-                        value: 104,
-                        density: { enable: true, value_area: 800 },
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS("snow", {
+            particles: {
+                number: {
+                    value: 104,
+                    density: { enable: true, value_area: 800 },
+                },
+                color: { value: "#fff" },
+                shape: {
+                    type: "circle",
+                    stroke: { width: 0, color: "#000000" },
+                    polygon: { nb_sides: 5 },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100,
                     },
-                    color: { value: "#fff" },
-                    shape: {
-                        type: "circle",
-                        stroke: { width: 0, color: "#000000" },
-                        polygon: { nb_sides: 5 },
-                        image: {
-                            src: "img/github.svg",
-                            width: 100,
-                            height: 100,
-                        },
-                    },
-                    opacity: {
-                        value: 0.5,
-                        random: true,
-                        anim: {
-                            enable: false,
-                            speed: 1,
-                            opacity_min: 0.1,
-                            sync: false,
-                        },
-                    },
-                    size: {
-                        value: 10,
-                        random: true,
-                        anim: {
-                            enable: false,
-                            speed: 40,
-                            size_min: 0.1,
-                            sync: false,
-                        },
-                    },
-                    line_linked: {
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: {
                         enable: false,
-                        distance: 500,
-                        color: "#ffffff",
-                        opacity: 0.4,
-                        width: 2,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false,
                     },
-                    move: {
-                        enable: true,
+                },
+                size: {
+                    value: 10,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false,
+                    },
+                },
+                line_linked: {
+                    enable: false,
+                    distance: 500,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 2,
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    direction: "bottom",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 },
+                },
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "bubble" },
+                    onclick: { enable: true, mode: "repulse" },
+                    resize: true,
+                },
+                modes: {
+                    grab: { distance: 400, line_linked: { opacity: 0.5 } },
+                    bubble: {
+                        distance: 400,
+                        size: 4,
+                        duration: 0.3,
+                        opacity: 1,
                         speed: 3,
-                        direction: "bottom",
-                        random: false,
-                        straight: false,
-                        out_mode: "out",
-                        bounce: false,
-                        attract: { enable: false, rotateX: 600, rotateY: 1200 },
                     },
+                    repulse: { distance: 200, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 },
                 },
-                interactivity: {
-                    detect_on: "canvas",
-                    events: {
-                        onhover: { enable: true, mode: "bubble" },
-                        onclick: { enable: true, mode: "repulse" },
-                        resize: true,
-                    },
-                    modes: {
-                        grab: { distance: 400, line_linked: { opacity: 0.5 } },
-                        bubble: {
-                            distance: 400,
-                            size: 4,
-                            duration: 0.3,
-                            opacity: 1,
-                            speed: 3,
-                        },
-                        repulse: { distance: 200, duration: 0.4 },
-                        push: { particles_nb: 4 },
-                        remove: { particles_nb: 2 },
-                    },
-                },
-                retina_detect: true,
-            });
-        </script>
-        <style>
-            #snow {
-                position: fixed;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                z-index: 999;
-                pointer-events: none;
-                transition: filter 0.5s ease;
-            }
-            html.darkmode #snow {
-                filter: invert(0.3);
-            }
-        </style>
-    </body>
+            },
+            retina_detect: true,
+        });
+    </script>
+    <style>
+        #snow {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 999;
+            pointer-events: none;
+            transition: filter 0.5s ease;
+        }
+
+        html.darkmode #snow {
+            filter: invert(0.3);
+        }
+    </style>
+</body>
+
 </html>
