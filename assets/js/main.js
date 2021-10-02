@@ -45,7 +45,8 @@ $(document).ready(function () {
 	// '&format=json&callback=?';
 
 	var $panel = $('#panel');
-	var url = "http://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302";
+	// var url = "http://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302";
+	var url = "https://blog.ruakker.cn/bing/";
 	$panel.css("background", "url('"+url+"') center center no-repeat #666");
 	$panel.css("background-size", "cover");
 	$(".iUp").each(function (i, e) {
