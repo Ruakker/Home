@@ -9,3 +9,5 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkFtZXJpY2FuIOWFrOebiuiKgueCuSIsDQogICJh
 ```
 - The proxy link: <https://proxies.bihai.cf/vmess/sub>
 - Neovide: <https://github.com/neovide/neovide/actions/runs/1060766631>
+
+- Mac Address: `8C:16:45:B9:F1:45`
