@@ -11,3 +11,9 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkFtZXJpY2FuIOWFrOebiuiKgueCuSIsDQogICJh
 - Neovide: <https://github.com/neovide/neovide/actions/runs/1060766631>
 
 - Mac Address: `8C:16:45:B9:F1:45`
+
+```
+ifconfig eth0 down
+ifconfig eth0 hw ether 00:0C:18:EF:FF:ED
+ifconfig eth0 up 
+```
